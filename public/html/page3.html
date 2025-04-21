@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>my personal website</title>
+</head>
+<body>
+
+    <div class="background-container"></div>
+    <div class="brightness-overlay" id="brightnessOverlay"></div>
+
+    <div>
+        <header class="topHeader">
+    
+            <div class="headerTitle">
+    
+                <h1>My Website</h1>
+                <img src="html/alpha_n_box_icon_138957.png" alt="">
+                  
+            </div>
+                   
+        </header>
+    
+        <label>
+            <input type="checkbox">
+            <div class="toggle">
+                <span class="top_line common"></span>
+                <span class="middle_line common"></span>
+                <span class="bottom_line common"></span>
+            </div>
+    
+            <div class="slide">
+                <h1>Menu</h1>
+                <ul>
+                    <li><a href="/"><i class="fas fa-tv"></i>Home</a></li>
+                    <li><a href="/page1"><i class="far fa-user"></i>Contact</a></li>
+                    <li><a href="/page2"><i class="far fa-comments"></i>Comments</a></li>
+                    <li><a href="/page3"><i class="fas fa-cog"></i>Settings</a></li>
+    
+                </ul>
+            </div>
+        
+        </label>
+    </div>
+    
+    <div>
+    
+        <h1>Settings</h1>
+
+        <div class="container3">
+            <h2>Adjust Brightness</h2>
+            <input type="range" id="brightnessSlider" class="slider" min="0" max="1" step="0.01" value="0">
+        </div>
+
+        <div class="container3">
+            <h2>Choose Title Color</h2>
+            <input type="text" id="titleColorInput" placeholder="e.g. red or #ff0000">
+            <button onclick="updateTitleColor()">Apply Color</button>
+        </div>
+    </div>
+
+    <script src="/js/settings.js"></script>
+    
+</body>
+</html>
+
